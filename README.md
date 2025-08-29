@@ -3,7 +3,8 @@ Link: https://raw.githubusercontent.com/pigzillaaa/daddylive/refs/heads/main/dad
 
 
 ## Status
-* 08/30/2025 - Only tested on one channel. Turns out many channels are not working. Diagnosing the problem ongoing
+* 08/30/2025 xx:xx - Only tested on one channel. Turns out many channels are not working. Diagnosing the problem ongoing
+* 08/30/2025 12:30 - It seems okay playing in mpv but fails for some reaseon on ott navigator. Just create an issue if not working
 
 ##
 Join our discord: https://discord.gg/SDTP3JbK
