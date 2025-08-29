@@ -10,4 +10,4 @@ Link: https://raw.githubusercontent.com/pigzillaaa/daddylive/refs/heads/main/dad
 ---
 
 ##
-Join our discord: https://discord.gg/SDTP3JbK
+Join our discord: [https://discord.gg/SDTP3JbK](https://discord.gg/7EQYgsrsBe)
