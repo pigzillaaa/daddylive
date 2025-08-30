@@ -1,0 +1,33 @@
+name: events-epg-grabber
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch: # Allows manual trigger from the Actions tab
+
+jobs:
+  fetch_epg_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Get events epg
+        run: |
+          cd epgs && curl -o daddylive-events-epg.xml "${{ secrets.DADDYLIVE_EVENTS_EPG_URL }}"
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "actions-user"
+          git config --global user.email "actions@github.com"
+          git add epgs/daddylive-events-epg.xml
+          git diff --staged --quiet || git commit -m "Update events epg"
+          git push --force
+        
