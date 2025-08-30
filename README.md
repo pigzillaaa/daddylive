@@ -7,7 +7,7 @@ Link: https://raw.githubusercontent.com/pigzillaaa/daddylive/refs/heads/main/dad
 ---
 
 #### Status
-* 08/30/2025 9:03PM - MAINTENANCE
+* ???
 ---
 
 ##
